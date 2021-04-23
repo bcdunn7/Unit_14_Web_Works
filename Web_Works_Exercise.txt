@@ -1,0 +1,66 @@
+What is HTTP?
+
+HTTP is a protocol. Specifically it is the hypertext transfer protocol which is standard use for the world wide web.
+As a protocol it serves as a convention for comunication between two computers to talk to each other. 
+This one specifically is used most often for browsers to communicate with servers to generate web markup (HTML).
+
+What is a URL?
+
+A URL is a universal resource locator. It is comprised of many parts (protocal, hostname, port, resource, query) in different combonations.
+It is used to more easily input information that is communicated with different computers or servers.
+
+
+What is HTTP?
+
+HTTP is a protocol. Specifically it is the hypertext transfer protocol which is standard use for the world wide web.
+As a protocol it serves as a convention for comunication between two computers to talk to each other.
+This one specifically is used most often for browsers to communicate with servers to generate web markup (HTML).
+
+What is a URL?
+
+A URL is a universal resource locator. It is comprised of many parts (protocal, hostname, port, resource, query) in different combonations.
+It is used to more easily input information that is communicated with different computers or servers.
+
+What is DNS?
+
+DNS is the domain name system and it has the task of taking what a user inputs into a browser and turning that into an IP address.
+This is done is that communication is possible with cache, routers, and servers.
+
+What is a query string?
+
+A query string is the final part of a URL and can be used to further specify a request that is made on a server.
+A search term is a dommon example of a query.
+
+What are two HTTP verbs and how are they different?
+
+GET and POST are two HTTP verbs (or methods) and they change the type of request that is made upon a server.
+Get is a method that is used for static request, that don't manipulate the server or database.
+While post is a method that is used when updating or changing a server or database in some way.
+
+What is an HTTP request?
+
+An HTTP request is a request made by the web broswer upon a server.
+It consists of a method, the protocol (HTTP), the version (1.1 usually for HTTP), the URL wanted, along with any addition information known as headers.
+
+What is an HTTP response?
+
+An HTTP response is the response the browser receives from the server after an HTTP request is made.
+The response contains the protocol (HTTP), the version (1.1), a response status code (common: 200, 301, 304, 404, 500), and any additional information in the headers.
+The header will often include the content type, date and time, and any cookies or caching information.
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+
+A header is additional information in an HTTP request and responce.
+Common examples are content-type: text/html; date: Wed, 14 Apr...; a last-modified date and time; languages (accept-language); along with the method (get/post/etc.)
+
+What are the processes that happen when you type “[http://somesite.com/some/page.html”](http://somesite.com/some/page.html%E2%80%9D) into a browser?
+
+A lot goes into to producing an outcome when a URL is typed into a broswer.
+The browser will turn the hostname ([somesite.com](http://somesite.com/)) into an IP address, then will attempt to connect to that address.
+It seeks to connect to that IP address on a given port (not specified here, port 80 for HTTP).
+It does this using a specified protocol (HTTP here).
+Then asks that IP address (a server) for a given page or information (/some/page.html).
+Along with any query strings added on (nothing here).
+This is all done using a specific method (get, post) along with any additional information (headers).
+The server will then attempt to locate information either on its own or thorugh communication with other servers or a database.
+It will then respond with all the relevat information (the protocol, method, headers, but also the content itself).
